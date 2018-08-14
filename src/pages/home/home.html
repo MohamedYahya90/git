@@ -1,0 +1,129 @@
+<ion-header>
+    <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?rd5re8"> 
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title class="animated bounce" >Home</ion-title>  
+  </ion-navbar>
+  
+</ion-header>
+
+<ion-content no-padding > 
+  <ion-card>
+    <img src="./assets/imgs/almaha3.jpg"/>
+    <ion-card-content>
+      <ion-card-title style="font-weight: bold;">
+        Al Maha Company
+        </ion-card-title>
+        <h2 style="font-weight: bold;">About Us</h2>
+      <p>
+        Al Maha established in Iraq during 1997 operating in Baghdad as a main hub of distribution across Iraq.
+
+Al Maha has developed a high caliber team across Iraq since we believe that our people are the heart of our business. We do maintain yearly activities of training sessions to include sales team, merchandising team, IT team, analysis team and Finance.
+
+Al Maha has established a strong distribution network within Iraq by establishing 10 full operational branches supported by more than 250 fleet of distribution and delivery that covers different levels of trade supported with strong IT system and functions that to improve coverage andsustainable growth.
+      </p>
+<br>
+      <h2 style="font-weight: bold;">Our Success</h2>
+
+  <p>The reason of our success, we believe, lies in keeping alive our pioneering spirit and continually seeking improvements in Iraqi market and targeting the un-tapped opportunities.</p>
+    </ion-card-content>
+  </ion-card>
+
+
+
+
+
+  
+      
+      <div class="half">
+        <h1 style="text-align: center">Our Branches</h1>
+        <div class="tab">
+          <input id="tab-one" type="checkbox" name="tabs">
+          <label for="tab-one">Head Quarter</label>
+          <div class="tab-content">
+            <h2>Erbil - Wazeran - Close to the American High School</h2>
+            <h2>Mobile : 07704537674</h2>
+          </div>
+        
+        </div>
+        <div class="tab">
+          <input id="tab-two" type="checkbox" name="tabs">
+          <label for="tab-two">Baghdad</label>
+          <div class="tab-content">
+            <h3>Neighborhood of Justice, Area of 643 - Alley 8 - Building Number 4285/1/2 </h3>
+            <h3>Mobile : 07506345234</h3>
+          </div>
+        </div>
+        <div class="tab">
+          <input id="tab-three" type="checkbox" name="tabs">
+          <label for="tab-three">Basra</label>
+          <div class="tab-content">
+            <h3>Al Wofood street, close to Niva Co.the exclusive Agent for Ford Co.</h3>
+            <h3>Mobile : 07704223674</h3>
+          </div>
+        </div>
+      </div>
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <h1 style="text-align: center">Follow us</h1>
+  <br> <br> <br> 
+  <ion-grid>
+  <ion-col class="socicons-list">
+      <li>
+        <a href='your_url_here' target='_blank'><span class="socicon-facebook"></span></a> 
+      </li>
+        <!-- <li>
+        <a href='your_url_here' target='_blank'><span class="socicon-instagram"></span></a> 
+      </li>  -->
+      <li>
+        <a href='your_url_here' target='_blank'><span class="socicon-twitter"></span></a> 
+      </li>
+      <li>
+        <a href='your_url_here' target='_blank'><span class="socicon-googleplus"></span></a> 
+      </li>          
+  </ion-col>
+  <br>
+</ion-grid>
+<br>
+<h1 style="text-align: center">Call us</h1>
+<ion-grid>
+  <ion-row>
+    <ion-col  class="call">
+      <li>
+        <ion-icon ios="ios-call" md="md-call"></ion-icon>&nbsp;
+      </li>
+      <li>
+        <h1>07702341234</h1>
+      </li>
+      </ion-col>
+  </ion-row>
+  
+</ion-grid>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<br>
+<ion-grid>
+<ion-row>
+    <ion-slides #productSlides class="p">
+      <ion-slide *ngFor="let product of products">
+        <ion-card class="p" no-padding>
+          <img [src]="product.featured_src"/>
+          <h1>{{product.title}}</h1>>
+          <p [innerHTML]="product.short_description"></p>
+        </ion-card>
+        
+      </ion-slide>
+    </ion-slides>
+</ion-row>
+</ion-grid>
+
+
+</ion-content>
+

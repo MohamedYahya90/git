@@ -1,0 +1,78 @@
+<ion-menu id="loggedInMenu" [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+      <ion-card>
+          <img src="./assets/imgs/22.jpg">
+         
+        </ion-card>
+    <ion-list >
+
+        <ion-item   (click)="openPage('Home1')" menuClose>
+            <ion-icon name="order" item-left large></ion-icon>
+            <h2>Last Offers</h2>
+          </ion-item>
+
+        <ion-item   (click)="openPage('cat')" menuClose>
+            <ion-icon name="order" item-left large></ion-icon>
+            <h2>Categories</h2>
+          </ion-item>
+
+        <ion-item  (click)="openPage('cart')"menuClose>
+            <ion-icon name="cart" item-left large></ion-icon>
+            <h2>Your Cart</h2>
+          </ion-item>
+
+          <ion-item   (click)="openPage('Orders')" menuClose>
+              <ion-icon name="order" item-left large></ion-icon>
+              <h2>My Orders</h2>
+            </ion-item>
+
+      <ion-item   (click)="openPage('logout')" menuClose>
+        <ion-icon name="log-out" item-left large></ion-icon>
+        <h2>Logout</h2>
+      </ion-item>
+
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+
+<ion-menu id="loggedOutMenu" [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+      <ion-card>
+          <img src="./assets/imgs/22.jpg">
+          
+        </ion-card>  
+    <ion-list >
+   
+      <ion-item (click)="openPage('login')"  menuClose>
+        <ion-icon name="login" item-left large></ion-icon>
+        <h2>Log in</h2>
+      </ion-item>
+
+          <ion-item (click)="openPage('signup')" menuClose>
+            <ion-icon name="md-clipboard" item-left large></ion-icon>
+            <h2>Sign Up</h2>
+
+            
+          </ion-item>
+        
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
